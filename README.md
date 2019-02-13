@@ -1,10 +1,10 @@
 # FinalProject
-# Author: Ye Fang
-# CWID: 10431002
-# purpose: data analysis
-# method: K-nearest neighbors algorithm
-# language: Python
-# dataset: https://www.kaggle.com/drgilermo/nba-players-stats-20142015
+Author: Ye Fang
+CWID: 10431002
+purpose: data analysis
+method: K-nearest neighbors algorithm
+language: Python
+dataset: https://www.kaggle.com/drgilermo/nba-players-stats-20142015
 
 This project is about data analysis. I am going to use k-nearest neighbors algorithm to analyze the NBA players stats. 
 
