@@ -1,11 +1,12 @@
 # FinalProject
-Author: Ye Fang
-CWID: 10431002
-purpose: data analysis
-method: K-nearest neighbors algorithm
-language: Python
-dataset: https://www.kaggle.com/drgilermo/nba-players-stats-20142015
+Author: Ye Fang</br>
+CWID: 10431002</br>
+purpose: data analysis</br>
+method: K-nearest neighbors algorithm</br>
+language: Python</br>
+dataset: https://www.kaggle.com/drgilermo/nba-players-stats-20142015</br>
 
+## Introduction
 This project is about data analysis. I am going to use k-nearest neighbors algorithm to analyze the NBA players stats. 
 
 Through the players stats, we can predict which position the players are acting. There are 5 positions on the court, point guard(PG), shooting guard(SG), small forward(SF), power forward(PF) and center(C).
@@ -29,6 +30,6 @@ These data will clearly show which positions are the players act.
 
 However, as we know, some positions may have the similiar data. For example, SG and SF may be hard to recognize, they may have the similiar data on points or rebounds. Due to this situation, the correct rate will not be really high, which means that some players may be predicted to another position. Though the correct rate isn't really high, we can still save much time on finding the most suitable position for a player.
 
-Practical Used:
+## Practical Used
 ● Imagine that we have a list of players stats of the rookies(the freshmen in NBA).
 ● We can easily find the most suitable position for a rookie.
