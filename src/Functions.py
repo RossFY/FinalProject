@@ -1,7 +1,10 @@
+# This page contains all the functions in this project
+
 import pandas as pd
 import math
 import operator
 
+# This function is used to create the training datasets and test datasets.
 def loadDataset(filename):
     data = pd.read_csv(filename,
                        usecols=['AST/TOV', 'STL/TOV', 'Height', 'Weight', 'PTSPM', 'DREBPM', 'ASTPM', 'STLPM', 'BLKPM',
@@ -32,12 +35,14 @@ def loadDataset(filename):
         file.close()
 
 
+# This function is to get the Euclidean Distance of two data
 def getDistance(instance1, instance2, length):
     distance = 0
     for x in range(1, length):
         distance += pow((float(instance1[x]) - float(instance2[x])), 2)
     return math.sqrt(distance)
 
+# This function is to get the k nearest neighbors of the test data.
 def getNeighbors(training_data, test, k):
     distances = []
     length = len(test) - 1
@@ -50,6 +55,7 @@ def getNeighbors(training_data, test, k):
         neighbors.append(distances[x][0])
     return neighbors
 
+# This function is to predict which position is the test data pointing to.
 def getResponse(neighbors):
     classVotes = {}
     for x in range(len(neighbors)):
@@ -61,6 +67,7 @@ def getResponse(neighbors):
     sortedVotes = sorted(classVotes.items(), key=operator.itemgetter(1), reverse=True)
     return sortedVotes[0][0]
 
+# This function is used to get the accuracy.
 def getAccuracy(test_data, predictions):
     correct = 0
     for x in range(len(test_data)):
