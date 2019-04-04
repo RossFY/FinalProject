@@ -9,7 +9,7 @@ def loadDataset(filename):
     data = pd.read_csv(filename,
                        usecols=['AST/TOV', 'STL/TOV', 'Height', 'Weight', 'PTSPM', 'DREBPM', 'ASTPM', 'STLPM', 'BLKPM',
                                 'OREBPM', 'Pos'])
-    data = data.dropna()
+    data = data.dropna() # ignore the missing values
     data.to_csv('Result.csv')
 
     try:
@@ -29,7 +29,7 @@ def loadDataset(filename):
             else:
                 training_data.append(list_result[i])
         return test_data, training_data
-    except Exception :
+    except Exception:
         print("Could not read file, please check the file path.")
     finally:
         file.close()
