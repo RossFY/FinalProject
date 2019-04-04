@@ -114,6 +114,7 @@ if __name__ == "__main__":
 
     accuracy = Functions.getAccuracy(test_data, predictions1)
 
+    # draw the table
     print("Table: (first row is the predicted values, first column is actual values)")
     print("\tPG\tSG\tSF\tPF\tC")
     print("PG\t%d\t%d\t%d\t%d\t%d" % (PG_PG, SG_PG, SF_PG, PF_PG, C_PG))
@@ -231,6 +232,7 @@ if __name__ == "__main__":
         # print('predicted = ' + repr(result) + ', actual = ' + repr(test_data[x][-1]))
     accuracy = Functions.getAccuracy(test_data, predictions2)
 
+    # draw the table
     print("Table: (first row is the predicted values, first column is actual values)")
     print("\tPG\tSG\tSF\tPF\tC")
     print("PG\t%d\t%d\t%d\t%d\t%d" % (PG_PG, SG_PG, SF_PG, PF_PG, C_PG))
@@ -348,6 +350,7 @@ if __name__ == "__main__":
         # print('predicted = ' + repr(result) + ', actual = ' + repr(test_data[x][-1]))
     accuracy = Functions.getAccuracy(test_data, predictions3)
 
+    # draw the table
     print("Table: (first row is the predicted values, first column is actual values)")
     print("\tPG\tSG\tSF\tPF\tC")
     print("PG\t%d\t%d\t%d\t%d\t%d" % (PG_PG, SG_PG, SF_PG, PF_PG, C_PG))
@@ -466,6 +469,7 @@ if __name__ == "__main__":
         # print('predicted = ' + repr(result) + ', actual = ' + repr(test_data[x][-1]))
     accuracy = Functions.getAccuracy(test_data, predictions4)
 
+    # draw the table
     print("Table: (first row is the predicted values, first column is actual values)")
     print("\tPG\tSG\tSF\tPF\tC")
     print("PG\t%d\t%d\t%d\t%d\t%d" % (PG_PG, SG_PG, SF_PG, PF_PG, C_PG))
@@ -477,5 +481,3 @@ if __name__ == "__main__":
     print('Total test data:', (matched + unmatched))
     print('Matched:', matched, 'Unmatched:', unmatched)
     print('Accuracy: ' + repr(accuracy) + '%')
-
-
