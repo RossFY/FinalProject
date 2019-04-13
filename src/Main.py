@@ -1,10 +1,10 @@
 # This is the Main File
 
-
+from Functions import Functions
+from getResult import getResult
 
 class Main(object):
-    from Functions import Functions
-    from getResult import getResult
+
     if __name__ == "__main__":
         f = Functions()
         filename = 'players_stats.csv'
