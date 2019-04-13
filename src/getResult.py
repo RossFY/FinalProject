@@ -1,3 +1,5 @@
+# This page is used to get the result
+
 from Functions import Functions
 
 class getResult(object):
@@ -109,7 +111,7 @@ class getResult(object):
                 self.matched += 1
             # print('predicted = ' + repr(result) + ', actual = ' + repr(test_data[x][-1]))
 
-        accuracy = f.getAccuracy(self.test_data, self.predictions)
+        accuracy = round(f.getAccuracy(self.test_data, self.predictions), 3)
 
         # draw the table
         print("Table: (first row is the predicted values, first column is actual values)")

@@ -6,6 +6,7 @@ from getResult import getResult
 class Main(object):
 
     if __name__ == "__main__":
+        # read the file and then get the test datasets and training datasets
         f = Functions()
         filename = 'players_stats.csv'
         test_data, training_data = f.loadDataset(filename)

@@ -36,7 +36,7 @@ class Functions(object):
             file.close()
 
 
-    # This function is to get the Euclidean Distance of two data
+    # This function is to get the Euclidean Distance of two data.
     def getDistance(self, instance1, instance2, length):
         distance = 0
         for x in range(1, length):
