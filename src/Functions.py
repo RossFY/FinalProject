@@ -4,6 +4,7 @@ import pandas as pd
 import math
 import operator
 
+
 class Functions(object):
     # This function is used to create the training datasets and test datasets.
     def loadDataset(self, filename):
@@ -34,7 +35,6 @@ class Functions(object):
             print("Could not read file, please check the file path.")
         finally:
             file.close()
-
 
     # This function is to get the Euclidean Distance of two data.
     def getDistance(self, instance1, instance2, length):

@@ -3,6 +3,7 @@
 from Functions import Functions
 from getResult import getResult
 
+
 class Main(object):
 
     if __name__ == "__main__":

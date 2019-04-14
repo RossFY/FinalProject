@@ -2,6 +2,7 @@
 
 from Functions import Functions
 
+
 class getResult(object):
     def __init__(self, k, test_data, training_data):
         self.predictions = []
@@ -126,3 +127,4 @@ class getResult(object):
         print('Matched:', self.matched, 'Unmatched:', self.unmatched)
         print('Accuracy: ' + repr(accuracy) + '%')
         print()
+
